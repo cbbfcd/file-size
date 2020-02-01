@@ -9,14 +9,8 @@ a super simple cli for file-size limit
 [![Build Status](https://travis-ci.org/cbbfcd/file-size.svg?branch=master)](https://travis-ci.org/cbbfcd/file-size)
 [![License](https://img.shields.io/npm/l/file-size.svg)](https://github.com/cbbfcd/file-size/blob/master/package.json)
 
-<!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
-
 
 # Usage
-<!-- usage -->
 ```sh-session
 $ npm install --save-dev simple-file-size
 ```
@@ -57,10 +51,6 @@ $ npm install --save-dev simple-file-size
 
 [demo](https://github.com/cbbfcd/didyoumean3)
 
-<!-- usagestop -->
-
-
 # Commands
-<!-- commands -->
+
 It works well now, maybe we need more in future, not now
-<!-- commandsstop -->
