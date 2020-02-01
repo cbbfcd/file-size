@@ -56,7 +56,7 @@ $ npm install --save-dev simple-file-size
 ```
 - demos
 
-[demo](https://github.com/cbbfcd/didyoumean3)
+[demo](https://github.com/cbbfcd/didyoumean3/blob/master/package.json)
 
 # Commands
 
