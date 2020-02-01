@@ -1,5 +1,5 @@
 {
-  "name": "file-size",
+  "name": "simple-file-size",
   "description": "a super simple cli for file-size limit",
   "version": "1.0.0",
   "author": {
