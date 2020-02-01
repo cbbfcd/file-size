@@ -1,4 +1,4 @@
-file-size
+simple-file-size
 =========
 
 a super simple cli for file-size limit
