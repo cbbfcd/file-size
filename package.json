@@ -7,7 +7,7 @@
     "email": "bobiloveali@gmail.com"
   },
   "bin": {
-    "file-size": "./bin/run"
+    "filesize": "./bin/run"
   },
   "bugs": "https://github.com/cbbfcd/file-size/issues",
   "dependencies": {

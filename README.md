@@ -47,6 +47,13 @@ $ npm install --save-dev simple-file-size
   }
 }
 ```
+**or download the simple-file-size in devDepencies, and then:**
+
+```json
+"scripts": {
+    "filesize": "filesize"
+  }
+```
 - demos
 
 [demo](https://github.com/cbbfcd/didyoumean3)
