@@ -1,7 +1,7 @@
 {
   "name": "simple-file-size",
   "description": "a super simple cli for file-size limit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": {
     "name": "波比小金刚",
     "email": "bobiloveali@gmail.com"
