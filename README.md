@@ -18,20 +18,49 @@ a super simple cli for file-size limit
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g simple-file-size
-$ file-size COMMAND
-running command...
-$ file-size (-v|--version|version)
-simple-file-size/1.0.4 darwin-x64 node-v12.14.1
-$ file-size --help [COMMAND]
-USAGE
-  $ file-size COMMAND
-...
+$ npm install --save-dev simple-file-size
 ```
+
+**Super simple, Just two steps**
+
+- add filesize in package.json
+
+```json
+{
+  "name": "simple-file-size",
+  "description": "a super simple cli for file-size limit",
+  "version": "1.0.0",
+  "filesize": [
+    {
+      "maxSize": "1kb",
+      "path": "./test/index.test.ts", 
+      "level": 9
+    }
+  ]
+}
+```
+> - maxSize must be a string like '1kb', '1mb', '10244'
+> - path, as you know, like './index.ts', path.resolve(__dirname, './a.js')
+> - level is optional, default is 9
+
+
+- add script in package.json
+
+```json
+{
+  "scripts": {
+    "filesize": "npx simple-file-size"
+  }
+}
+```
+- demos
+
+[demo](https://github.com/cbbfcd/didyoumean3)
+
 <!-- usagestop -->
 
 
 # Commands
 <!-- commands -->
-
+It works well now, maybe we need more in future, not now
 <!-- commandsstop -->
