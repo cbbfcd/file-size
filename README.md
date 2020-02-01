@@ -17,7 +17,7 @@ a super simple cli for file-size limit
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install --save-dev file-size
+$ npm install --save-dev simple-file-size
 ```
 
 **Super simple, Just two steps**
@@ -26,7 +26,7 @@ $ npm install --save-dev file-size
 
 ```json
 {
-  "name": "file-size",
+  "name": "simple-file-size",
   "description": "a super simple cli for file-size limit",
   "version": "1.0.0",
   "filesize": [
@@ -48,7 +48,7 @@ $ npm install --save-dev file-size
 ```json
 {
   "scripts": {
-    "filesize": "npx file-size"
+    "filesize": "npx simple-file-size"
   }
 }
 ```
