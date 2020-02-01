@@ -31,14 +31,17 @@ $ npm install --save-dev file-size
   "version": "1.0.0",
   "filesize": [
     {
-      "maxSize": "1kb", // string, can be "1kb", "1mb", "1024" ...
-      // also can path.resolve(__dirname, "./sss")
+      "maxSize": "1kb",
       "path": "./test/index.test.ts", 
-      "level": 9 // optional, default is 9
+      "level": 9
     }
   ]
 }
 ```
+> - maxSize must be a string like '1kb', '1mb', '10244'
+> - path, as you know, like './index.ts', path.resolve(__dirname, './a.js')
+> - level is optional, default is 9
+
 
 - add script in package.json
 
