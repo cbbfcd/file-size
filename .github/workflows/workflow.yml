@@ -1,0 +1,39 @@
+name: workflow for Codecov
+on: [push]
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix: 
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [13.x, 12.x, 10.x, 9.x, 8.x]
+        exclude:
+          # On Windows, run tests with only the latest environments.
+          - os: windows-latest
+            node: 10.x
+          - os: windows-latest
+            node: 13.x
+          # On macOS, run tests with only the latest environments.
+          - os: macOS-latest
+            node: 10.x
+          - os: macOS-latest
+            node: 13.x
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Test And CI
+        run: npm run test
+      - name: Upload coverage to Codecov
+        # https://github.com/codecov/codecov-bash/blob/1044b7a243e0ea0c05ed43c2acd8b7bb7cef340c/codecov#L158
+        run: npx codecov
+          -f "./coverage/coverage-final.json"
+          -y "./.codecov.yml"
+          -b ${{ github.head_ref }}
+          -c ${{ github.event.after }}
+        env:
+          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+
