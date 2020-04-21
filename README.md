@@ -7,7 +7,7 @@ a super simple cli for file-size limit
 [![Version](https://img.shields.io/npm/v/file-size.svg)](https://npmjs.org/package/file-size)
 [![Downloads/week](https://img.shields.io/npm/dw/file-size.svg)](https://npmjs.org/package/file-size)
 [![Build Status](https://travis-ci.org/cbbfcd/file-size.svg?branch=master)](https://travis-ci.org/cbbfcd/file-size)
-[![License](https://img.shields.io/npm/l/file-size.svg)](https://github.com/cbbfcd/file-size/blob/master/package.json)
+[![License](https://img.shields.io/npm/l/file-size.svg)](https://github.com/cbbfcd/file-size/blob/master/package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/file-size.svg)](https://greenkeeper.io/)
 
 
 # Usage
